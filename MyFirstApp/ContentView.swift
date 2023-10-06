@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
+    
+    
+    let farmAnimals = ["Cow", "Dog", "Cat"]
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, everyone!")
+            ForEach(farmAnimals, id: \.self) {animal in Text(animal)}
         }
         .padding()
     }
