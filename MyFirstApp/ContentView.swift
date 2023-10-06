@@ -8,17 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
-    
-    
-    let farmAnimals = ["Cow", "Dog", "Cat"]
-    
     var body: some View {
         VStack {
-            ForEach(farmAnimals, id: \.self) {animal in Text(animal)}
+            Text("Hello, World!")
         }
-        .padding()
     }
 }
 
