@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var menu: String = "beef"
+    @State var menu: Menu = .beef
+    
+    enum Menu { 
+        case beef, pork, chicken
+    }
     
     var body: some View {
         
         switch menu {
-        case "beef":
+        case .beef:
             Text("Today is beef")
-        default:
-            Text("Something is wrong")
+        case .pork:
+            Text("Today is pork")
+        case .chicken:
+            Text("Today is chicken")
+            //        default:
+            //            Text("Something is wrong")
         }
     }
 }
