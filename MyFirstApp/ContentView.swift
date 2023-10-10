@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var myMind: String = "nothing!"
+    @State var isChangedMind: Bool = false
+
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            Text(myMind)
+            Button {
+                isChangedMind.toggle()
+                myMind = getMind(with: isChangedMind)
+            } label: {
+                Text("Change my mind!")
+            }
+        }
+    }
+
+    func getMind(with isChangedMind: Bool) -> String {
+        if isChangedMind {
+            return "always open"
+        } else {
+            return "but closed"
         }
     }
 }
