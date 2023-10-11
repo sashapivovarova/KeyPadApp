@@ -8,30 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var menu: String? = "What is the menu?"
-    let menus: [Food] = [.beef, .pork, .shrimp, .clam]
-    
-    enum Food: String {
-        case beef = "beef"
-        case pork = "pork"
-        case shrimp = "shrimp"
-        case clam = "clam"
-    }
-    
     var body: some View {
-        VStack {
-            if menu == "beef" || menu == "shrimp" {
-                Text("So tasty a \(menu!)")
-            } else {
-                Text(menu!)
-            }
-            
-            Button {
-                menu = menus.randomElement()?.rawValue
-            } label: {
-                Text("Push")
-            }
-        }
+        Text("Hello")
     }
 }
 
