@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        Button{
-//            print("Hited2")
-//        } label: {
-//            Text("Hit me")
-//                .padding()
-//                .frame(width: 150)
-//                .background(.yellow)
-//                .cornerRadius(13)
-//        }
-        
-        Button("Delete" ,role: .destructive) {
-            print("Deleted")
+        VStack{
+            Text("Hello sasha")
+                .bold()
+                .italic()
+                .strikethrough()
+                .font(.title)
+            Text("Hello sasha")
+                .font(.system(size: 30))
+            Text("Hello sasha")
+                .underline(true, color: .black)
+                .foregroundColor(.pink)
+                .background(.green)
+            Text("iHerb")
+                .foregroundColor(.green)
+                .font(.system(size: 60, weight: .bold, design: .rounded))
+
         }
     }
 }
