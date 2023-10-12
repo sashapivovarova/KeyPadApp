@@ -14,8 +14,8 @@
             filePath = "MyFirstApp/DialButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -30,42 +30,10 @@
             filePath = "MyFirstApp/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "41131585-404B-4B93-BBD5-AD4D17AF67F9 - 80c31d1d8202c7e5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MyFirstApp.ContentView.body.getter : some"
-                  moduleName = "MyFirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anastasiagrey/StudioProjects/MyFirstApp/MyFirstApp/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "275">
-               </Location>
-               <Location
-                  uuid = "41131585-404B-4B93-BBD5-AD4D17AF67F9 - 4ab49350313b2292"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in MyFirstApp.ContentView.body.getter : some"
-                  moduleName = "MyFirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anastasiagrey/StudioProjects/MyFirstApp/MyFirstApp/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "139">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

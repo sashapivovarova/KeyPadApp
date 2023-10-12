@@ -10,10 +10,11 @@ import SwiftUI
 struct DialButton: View {
     
     let dialNumber: Dial
+    @Binding var inputNumber: String
     
     var body: some View {
         Button {
-            
+            inputNumber += dialNumber.mainNumber
         }label:{
             VStack(spacing: 0){
                 if dialNumber.mainNumber == "Phone" {
