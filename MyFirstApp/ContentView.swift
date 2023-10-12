@@ -10,21 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-            Text("Hello sasha")
-                .bold()
-                .italic()
-                .strikethrough()
-                .font(.title)
-            Text("Hello sasha")
-                .font(.system(size: 30))
-            Text("Hello sasha")
-                .underline(true, color: .black)
-                .foregroundColor(.pink)
-                .background(.green)
-            Text("iHerb")
-                .foregroundColor(.green)
-                .font(.system(size: 60, weight: .bold, design: .rounded))
-
+            Image("1")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 200)
+                .clipped()
+                .background(.yellow)
+                .border(.green, width: 7)
+            Text("Today's sunny!")
+                .font(.system(size: 20, design: .rounded))
+            Image(systemName: "sun.min")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 30, height: 30)
+                .foregroundColor(.orange)
         }
     }
 }
