@@ -13,14 +13,7 @@ struct ContentView: View {
             Image("1")
                  .resizable()
                  .aspectRatio(contentMode: .fit)
-                 .frame(width: 200, height: 200)
-                 .background(.pink)
-                 .padding(.bottom, 100)
-            Image("1")
-                 .resizable()
-                 .aspectRatio(contentMode: .fit)
-                 .frame(width: 200, height: 200)
-                 .padding([.leading, .trailing], 100)
+                 .frame(width: 400, height: 200, alignment: .trailing)
                  .background(.pink)
         }
     }
