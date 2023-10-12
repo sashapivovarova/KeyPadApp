@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var name: String = "Click"
-    
     var body: some View {
-        VStack{
-            Text("Hi!")
-            Button {name = "Jamie"} label: {Text(name)}
-        }
+       Image("1")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 200, height: 200)
+            .background(.pink)
     }
 }
 
