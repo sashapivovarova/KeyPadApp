@@ -9,16 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        //        Color.pink
-        //            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-        
-        //        Color.pink
-        //            .frame(width: 300, height: 200)
-        //            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-        
-        Color("CompanyColor")
-            .frame(width: 300, height: 200)
-            .clipShape(RoundedRectangle(cornerRadius: 30))
+        Button {
+            print("Clicked view")
+        } label: {
+            MyView()
+        }
+    }
+}
+
+struct MyView: View {
+    var body: some View {
+        Text("My View")
     }
 }
 
