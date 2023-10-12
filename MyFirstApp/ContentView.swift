@@ -9,70 +9,31 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        List {
-            Section {
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("Sasha")
-                }
-                HStack {
-                    Image(systemName: "heart")
-                        .foregroundColor(.black)
-                    Text("Jamie")
-                }
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("Dakota")
-                }
-            } header: {
-                Text("a class")
+        VStack {
+            Image(systemName: "bolt.fill")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 60, height: 80)
+                .foregroundColor(.yellow)
+            Spacer()
+            HStack{
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 60, height: 80)
+                    .foregroundColor(.red)
+                Spacer()
+                    .foregroundColor(.red)
+                Text("Heart")
+            }.padding(.horizontal, 50)
+            Spacer()
+            Button {
+                print("Blink")
+            } label: {
+                Text("Bolt")
+                    .foregroundColor(.black)
             }
-            Section {
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("Sasha")
-                }
-                HStack {
-                    Image(systemName: "heart")
-                        .foregroundColor(.black)
-                    Text("Jamie")
-                }
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("Dakota")
-                }
-            } header: {
-                Text("b class")
-            }
-            Section {
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("Sasha")
-                }
-                HStack {
-                    Image(systemName: "heart")
-                        .foregroundColor(.black)
-                    Text("Jamie")
-                }
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("Dakota")
-                }
-            } header: {
-                Text("c class")
-            } footer: {
-                VStack{
-                    Text("Created by Sasha")
-                    Text("Contact : @sasha")
-                }
-            }
-        }
+        }.padding(.vertical, 50)
     }
 }
 
