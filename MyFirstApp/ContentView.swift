@@ -8,18 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var name: String = "Click"
+    
     var body: some View {
-        Button {
-            print("Clicked view")
-        } label: {
-            MyView()
+        VStack{
+            Text("Hi!")
+            Button {name = "Jamie"} label: {Text(name)}
         }
-    }
-}
-
-struct MyView: View {
-    var body: some View {
-        Text("My View")
     }
 }
 
