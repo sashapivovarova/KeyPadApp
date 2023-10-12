@@ -9,31 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "bolt.fill")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 60, height: 80)
-                .foregroundColor(.yellow)
-            Spacer()
-            HStack{
-                Image(systemName: "heart.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 60, height: 80)
-                    .foregroundColor(.red)
-                Spacer()
-                    .foregroundColor(.red)
-                Text("Heart")
-            }.padding(.horizontal, 50)
-            Spacer()
-            Button {
-                print("Blink")
-            } label: {
-                Text("Bolt")
-                    .foregroundColor(.black)
-            }
-        }.padding(.vertical, 50)
+        //        Color.pink
+        //            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        
+        //        Color.pink
+        //            .frame(width: 300, height: 200)
+        //            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+        
+        Color("CompanyColor")
+            .frame(width: 300, height: 200)
+            .clipShape(RoundedRectangle(cornerRadius: 30))
     }
 }
 
