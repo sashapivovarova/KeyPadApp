@@ -9,22 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            Color.pink
-            Image(systemName: "heart")
-                .resizable()
-                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                .foregroundColor(.yellow)
-                .frame(width: 200, height: 200)
-            VStack {
-                Text("1")
-                HStack {
-                    Text("1")
-                    Text("2")
-                    Text("3")
-                }
-                Text("3")
-            }
+        ScrollView(showsIndicators: false) {
+            Text("1")
+                .frame(width: 300, height: 500)
+                .background(.red)
+            Text("2")
+                .frame(width: 300, height: 500)
+                .background(.blue)
+            Text("3")
+                .frame(width: 300, height: 500)
+                .background(.green)
         }
     }
 }
