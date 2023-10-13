@@ -14,7 +14,12 @@ struct DialButton: View {
     
     var body: some View {
         Button {
-            inputNumber += dialNumber.mainNumber
+            if dialNumber.mainNumber != "Phone",
+               dialNumber.mainNumber != "Delete" {
+                inputNumber += dialNumber.mainNumber
+            } else if dialNumber.mainNumber == "Delete" {
+                inputNumber = String(inputNumber.dropLast())
+            }
         }label:{
             VStack(spacing: 0){
                 if dialNumber.mainNumber == "Phone" {
@@ -22,6 +27,13 @@ struct DialButton: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 30)
+                } else if dialNumber.mainNumber == "Delete" && inputNumber != "" {
+                    Image(systemName: "delete.left.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                } else if dialNumber.mainNumber == "Delete" && inputNumber == "" {
+                    
                 } else {
                     Text(dialNumber.mainNumber)
                         .font(.system(size: 30))

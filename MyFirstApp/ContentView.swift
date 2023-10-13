@@ -27,10 +27,10 @@ struct ContentView: View {
             ForEach(dialDummy, id: \.self) {items in
                 HStack {
                     ForEach(items, id: \.self) {item in
-                        DialButton(dialNumber: Dial(mainNumber: item.mainNumber, 
+                        DialButton(dialNumber: Dial(mainNumber: item.mainNumber,
                                                     subAlphabet: item.subAlphabet,
                                                     buttonColor: item.buttonColor),
-                        inputNumber: $inputNumber)
+                                   inputNumber: $inputNumber)
                     }
                 }
             }
