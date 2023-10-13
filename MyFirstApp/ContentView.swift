@@ -14,16 +14,19 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Spacer()
+            
             VStack {
                 Text(inputNumber)
                     .font(.system(size: 30))
                     .padding(.vertical,10)
-                if inputNumber != "" {
+                if !inputNumber.isEmpty {
                     Text("Add to Contacts")
                 }
             }
             .frame(height: 100)
+            
             Spacer()
+            
             ForEach(dialDummy, id: \.self) {items in
                 HStack {
                     ForEach(items, id: \.self) {item in
@@ -34,7 +37,9 @@ struct ContentView: View {
                     }
                 }
             }
+            
             Spacer()
+            
         }
     }
 }

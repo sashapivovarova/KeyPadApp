@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5AA36DD62AD7DF7600206924 /* DialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA36DD52AD7DF7600206924 /* DialButton.swift */; };
 		5AA36DD82AD7E74100206924 /* Dial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA36DD72AD7E74100206924 /* Dial.swift */; };
-		5AB46F632ACE58150051BAFD /* MyFirstAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB46F622ACE58150051BAFD /* MyFirstAppApp.swift */; };
+		5AB46F632ACE58150051BAFD /* MyFirstApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB46F622ACE58150051BAFD /* MyFirstApp.swift */; };
 		5AB46F652ACE58150051BAFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB46F642ACE58150051BAFD /* ContentView.swift */; };
 		5AB46F672ACE58180051BAFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB46F662ACE58180051BAFD /* Assets.xcassets */; };
 		5AB46F6B2ACE58180051BAFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB46F6A2ACE58180051BAFD /* Preview Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		5AA36DD52AD7DF7600206924 /* DialButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialButton.swift; sourceTree = "<group>"; };
 		5AA36DD72AD7E74100206924 /* Dial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dial.swift; sourceTree = "<group>"; };
 		5AB46F5F2ACE58150051BAFD /* MyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AB46F622ACE58150051BAFD /* MyFirstAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppApp.swift; sourceTree = "<group>"; };
+		5AB46F622ACE58150051BAFD /* MyFirstApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstApp.swift; sourceTree = "<group>"; };
 		5AB46F642ACE58150051BAFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5AB46F662ACE58180051BAFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AB46F682ACE58180051BAFD /* MyFirstApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyFirstApp.entitlements; sourceTree = "<group>"; };
@@ -99,13 +99,13 @@
 		5AB46F612ACE58150051BAFD /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
-				5AB46F622ACE58150051BAFD /* MyFirstAppApp.swift */,
+				5AB46F622ACE58150051BAFD /* MyFirstApp.swift */,
 				5AB46F642ACE58150051BAFD /* ContentView.swift */,
+				5AA36DD52AD7DF7600206924 /* DialButton.swift */,
+				5AA36DD72AD7E74100206924 /* Dial.swift */,
 				5AB46F662ACE58180051BAFD /* Assets.xcassets */,
 				5AB46F682ACE58180051BAFD /* MyFirstApp.entitlements */,
 				5AB46F692ACE58180051BAFD /* Preview Content */,
-				5AA36DD52AD7DF7600206924 /* DialButton.swift */,
-				5AA36DD72AD7E74100206924 /* Dial.swift */,
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 			files = (
 				5AB46F652ACE58150051BAFD /* ContentView.swift in Sources */,
 				5AA36DD62AD7DF7600206924 /* DialButton.swift in Sources */,
-				5AB46F632ACE58150051BAFD /* MyFirstAppApp.swift in Sources */,
+				5AB46F632ACE58150051BAFD /* MyFirstApp.swift in Sources */,
 				5AA36DD82AD7E74100206924 /* Dial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
