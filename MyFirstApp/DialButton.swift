@@ -14,12 +14,7 @@ struct DialButton: View {
     
     var body: some View {
         Button {
-            if dialNumber.mainNumber != "Phone",
-               dialNumber.mainNumber != "Delete" {
-                inputNumber += dialNumber.mainNumber
-            } else if dialNumber.mainNumber == "Delete" {
-                inputNumber = String(inputNumber.dropLast())
-            }
+            
         }label:{
             VStack(spacing: 0){
                 if dialNumber.mainNumber == "Phone" {
@@ -52,6 +47,24 @@ struct DialButton: View {
             .background(dialNumber.buttonColor)
             .clipShape(Circle())
         }
+        .simultaneousGesture(LongPressGesture().onEnded { _ in
+            if dialNumber.mainNumber == "0" {
+                inputNumber += "+"
+            } else if dialNumber.mainNumber != "Phone",
+                      dialNumber.mainNumber != "Delete" {
+                inputNumber += dialNumber.mainNumber
+            } else if dialNumber.mainNumber == "Delete" {
+                inputNumber = ""
+            }
+        })
+        .simultaneousGesture(TapGesture().onEnded { _ in
+            if dialNumber.mainNumber != "Phone",
+               dialNumber.mainNumber != "Delete" {
+                inputNumber += dialNumber.mainNumber
+            } else if dialNumber.mainNumber == "Delete" {
+                inputNumber = String(inputNumber.dropLast())
+            }
+        })
         .padding(.all, 8)
     }
 }
