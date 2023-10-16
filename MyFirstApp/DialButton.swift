@@ -38,7 +38,7 @@ struct DialButton: View {
                 HStack(spacing: 0) {
                     ForEach(dialNumber.subAlphabet, id: \.self) {item in
                         Text(item)
-                            .font(.system(size: 10))
+                            .font(.system(size: 15))
                     }
                 }
             }
